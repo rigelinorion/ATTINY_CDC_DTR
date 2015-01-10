@@ -1,0 +1,61 @@
+##############################################################
+
+AtmegaCDC328p.name=ATmega328pCDC (16Mhz) *RIGEL*
+
+AtmegaCDC328p.upload.tool=avrdude
+AtmegaCDC328p.upload.protocol=arduino
+AtmegaCDC328p.maximum_size=30720
+
+AtmegaCDC328p.bootloader.tool=avrdude
+AtmegaCDC328p.bootloader.unlock_bits=0x3F
+AtmegaCDC328p.bootloader.lock_bits=0x0F
+AtmegaCDC328p.bootloader.low_fuses=0xFF
+AtmegaCDC328p.bootloader.high_fuses=0xDA
+AtmegaCDC328p.bootloader.extended_fuses=0x05
+
+AtmegaCDC328p.build.mcu=atmega328p
+AtmegaCDC328p.build.f_cpu=16000000L
+AtmegaCDC328p.build.core=arduino
+AtmegaCDC328p.build.variant=standard
+
+## -------------------------------------------------
+AtmegaCDC328p.menu.cpu.Baud38400=Baud38400
+AtmegaCDC328p.menu.cpu.Baud38400.upload.speed=38400
+AtmegaCDC328p.menu.cpu.Baud38400.bootloader.file=ADABoot_328_38400.hex
+
+AtmegaCDC328p.menu.cpu.Baud19200=Baud19200
+AtmegaCDC328p.menu.cpu.Baud19200.upload.speed=19200
+AtmegaCDC328p.menu.cpu.Baud19200.bootloader.file=ADABoot_328_19200.hex
+
+AtmegaCDC328p.menu.cpu.Baud4800=Baud4800
+AtmegaCDC328p.menu.cpu.Baud4800.upload.speed=4800
+AtmegaCDC328p.menu.cpu.Baud4800.bootloader.file=ADABoot_328_4800.hex
+
+
+##############################################################
+
+Atmega8CDCtiny85.name=Atmega8CDC(BAUD 4800) *RIGEL*
+Atmega8CDCtiny85.upload.protocol=arduino
+Atmega8CDCtiny85.upload.maximum_size=7680
+Atmega8CDCtiny85.upload.tool=avrdude
+Atmega8CDCtiny85.upload.speed=4800
+Atmega8CDCtiny85.bootloader.unlock_bits=0x3F
+Atmega8CDCtiny85.bootloader.lock_bits=0x0F
+Atmega8CDCtiny85.bootloader.tool=avrdude1
+
+
+Atmega8CDCtiny85.menu.cpu.Atmega8=Atmega8 8Mhz
+Atmega8CDCtiny85.menu.cpu.Atmega8.build.f_cpu=8000000L
+Atmega8CDCtiny85.menu.cpu.Atmega8.bootloader.low_fuses=0xDF
+Atmega8CDCtiny85.menu.cpu.Atmega8.bootloader.high_fuses=0xCA
+Atmega8CDCtiny85.menu.cpu.Atmega8.build.mcu=atmega8
+Atmega8CDCtiny85.menu.cpu.Atmega8.build.core=arduino
+Atmega8CDCtiny85.menu.cpu.Atmega8.build.variant=standard
+
+Atmega8CDCtiny85.menu.cpu.Atmega16=Atmega8 16Mhz
+Atmega8CDCtiny85.menu.cpu.Atmega16.build.f_cpu=16000000L
+Atmega8CDCtiny85.menu.cpu.Atmega16.bootloader.low_fuses=0xFF
+Atmega8CDCtiny85.menu.cpu.Atmega16.bootloader.high_fuses=0xDA
+Atmega8CDCtiny85.menu.cpu.Atmega16.build.mcu=atmega8
+Atmega8CDCtiny85.menu.cpu.Atmega16.build.core=arduino
+Atmega8CDCtiny85.menu.cpu.Atmega16.build.variant=standard
